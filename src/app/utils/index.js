@@ -1,6 +1,5 @@
 import Http from './http';
 
-const http = new Http('https://jsonplaceholder.typicode.com/');
-const env = import.meta.env;
+const http = new Http(import.meta.env.VITE_API_BASE_URL);
 
-export { http, env };
+export { http };
