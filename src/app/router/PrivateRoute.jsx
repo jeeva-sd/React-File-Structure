@@ -7,7 +7,7 @@ function PrivateRoute({ children }) {
 
     useEffect(() => {
         if (!isAuthenticated) navigate('/');
-    }, []);
+    }, [isAuthenticated, navigate]);
 
     return isAuthenticated ? children : <></>;
 }

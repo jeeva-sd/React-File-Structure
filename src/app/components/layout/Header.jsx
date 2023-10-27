@@ -20,7 +20,9 @@ function Header() {
                             </li>
                             <li>
                                 <button
-                                    onClick={() => navigate('/')}
+                                    onClick={() => {
+                                        navigate('/');
+                                    }}
                                     className='text-base px-4 py-2 bg-white text-black rounded-lg hover:bg-blue-100'
                                 >
                                     Logout
