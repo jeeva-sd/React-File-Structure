@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, setPostRequest } from '../../store/reducers/counterSlice';
+import { increment, decrement, setPostRequest } from '../../../store/reducers/counterSlice';
 
 const Dashboard = () => {
     const { value, valueTwo, post: { data } } = useSelector(state => state.counter);
